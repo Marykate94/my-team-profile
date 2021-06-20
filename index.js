@@ -92,12 +92,82 @@ function getManagerDetails(emp) {
         let managerData = new Manager(emp.name, emp.id, emp.email, managerInfo.officeNumber)
         console.log(managerData);
         employees.push(managerData);
+        addEmployee();
     }
         
     )
 }
 
+function getEngineerDetails(emp) {
+    inquirer.prompt ([{
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Please enter your github username!');
+                return false;
+            }
+        }
+    }]).then(function(engineerInfo) {
+        let engineerData = new Manager(emp.name, emp.id, emp.email, engineerInfo.github)
+        console.log(engineerData);
+        employees.push(engineerData);
+        addEmployee();
+    }
+        
+    )
+}
 
+function getInternDetails(emp) {
+    inquirer.prompt ([{
+        type: 'input',
+        name: 'school',
+        message: 'What school did you attend?',
+        validate: schoolInput => {
+            if (schoolInput) {
+                return true;
+            } else {
+                console.log('Please enter what school you attended!');
+                return false;
+            }
+        }
+    }]).then(function(schoolInfo) {
+        let schoolData = new Manager(emp.name, emp.id, emp.email, schoolInfo.school)
+        console.log(schoolData);
+        employees.push(schoolData);
+        addEmployee();
+    }
+        
+    )
+}
+
+function addEmployee() {
+    inquirer.prompt ([
+        {type: 'list',
+        name: 'info',
+        message: 'Do you want to add more employees?',
+        choices: ['Yes','No']
+        }
+        
+    ]).then(function(userResponse) {
+        switch (userResponse.info) {
+            case 'Yes':
+                promptUser();
+                break;
+            case 'No':
+                let HTMLdata = render(employees);    
+                console.log(HTMLdata);
+                fs.writeFileSync('./output/team.html',HTMLdata,function(err)
+                {
+                    if (err) throw err;
+                    console.log('generateHTML');
+                })
+        }
+    })
+}
 
 promptUser()
 // After the user has input all employees desired, call the `render` function (required
