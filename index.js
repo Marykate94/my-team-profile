@@ -57,11 +57,11 @@ const promptUser = () => {
         {
             type: 'list',
             choices: ['Manager','Engineer','Intern'],
-            message: 'Please select your position:',
-            name: 'position'
+            message: 'Please select your role:',
+            name: 'role'
         }
     ]).then(function(getUserInput) {
-        switch(getUserInput.position) {
+        switch(getUserInput.role) {
             case "Manager": 
             getManagerDetails(getUserInput) ;
             break;
@@ -112,7 +112,7 @@ function getEngineerDetails(emp) {
             }
         }
     }]).then(function(engineerInfo) {
-        let engineerData = new Manager(emp.name, emp.id, emp.email, engineerInfo.github)
+        let engineerData = new Engineer(emp.name, emp.id, emp.email, engineerInfo.github)
         console.log(engineerData);
         employees.push(engineerData);
         addEmployee();
@@ -135,7 +135,7 @@ function getInternDetails(emp) {
             }
         }
     }]).then(function(schoolInfo) {
-        let schoolData = new Manager(emp.name, emp.id, emp.email, schoolInfo.school)
+        let schoolData = new Intern(emp.name, emp.id, emp.email, schoolInfo.school)
         console.log(schoolData);
         employees.push(schoolData);
         addEmployee();
