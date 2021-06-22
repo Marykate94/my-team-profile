@@ -22,6 +22,9 @@ Using jest - tests were ran for Employee, Engineer, Intern and Manager to ensure
 Made by Marykate Smith. 
 
 
+Starter code provided by instructor Kevin F.
+
+
 Find me on GitHub at https://github.com/Marykate94. 
 
 
