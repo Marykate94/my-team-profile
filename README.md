@@ -1,44 +1,36 @@
 # my-team-profile
 
-  ## Description
-  An application that generates a team profile and provides base information as well as specific information to the employees role. 
+## Description
+An application that generates a team profile and provides base information as well as specific information to the employees role. 
 
-  ## Table of Contents
+## Table of Contents
   - [Description](#description)
   - [Instructions](#instructions)
   - [Usage](#usage)
-  - [License](#license)
-  - [Contributors](#contributors)
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Instructions 
-  First you must install node onto your computer. via their website you can download node and follow the instructions to complete the download. After node has been installed you will enter "npm install inquirer" into your terminal once you are in your main file directory of your repo. Then you will also download jest for testing purposes in the terminal as a dev dependency: "npm install --save-dev jest". Once everything has been downloaded in order to initiate the prompts and generate your readme you will run "node index" in the terminal. 
+## Instructions 
+First you must install node onto your computer. via their website you can download node and follow the instructions to complete the download. After node has been installed you will enter "npm install inquirer" into your terminal once you are in your main file directory of your repo. Then you will also download jest for testing purposes in the terminal as a dev dependency: "npm install --save-dev jest". Once everything has been downloaded in order to initiate the prompts and generate your readme you will run "node index" in the terminal. 
 
-  ## Usage
-  A video screencast will be provided to show all tests passing and the full operation of node in the terminal. You must enter information into the prompts following the questions in order to develop your teams profile. 
+## Usage
+A video screencast will be provided to show all tests passing and the full operation of node in the terminal. You must enter information into the prompts following the questions in order to develop your teams profile. 
   
   
-  Please see video link for my-team-profile tutorial: https://drive.google.com/file/d/1X-nEuL0NXa3ebYm2Y3N7siuD-rFaQbPq/view
+Please see video link for my-team-profile tutorial: https://drive.google.com/file/d/1X-nEuL0NXa3ebYm2Y3N7siuD-rFaQbPq/view
 
-  ## License
-  N/A
-
- 
-  [Check out each licenses meaning](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/licensing-a-repository)
-
-  ## Contributors
-  Please adhere to github guidelines and standards upon contributing. 
-
-  ## Tests
-  Using jest - tests were ran for Employee, Engineer, Intern and Manager to ensure functionality in those js files. All 4 tests were passed prior to developing the index.js file. These tests can be found in the __tests__ folder. 
-
-  ## Questions
-  Made by Marykate Smith. 
+## Images
 
 
-  Find me on GitHub at https://github.com/Marykate94. 
+## Tests
+Using jest - tests were ran for Employee, Engineer, Intern and Manager to ensure functionality in those js files. All 4 tests were passed prior to developing the index.js file. These tests can be found in the __tests__ folder. 
+
+## Questions
+Made by Marykate Smith. 
 
 
-  Alternatively I can be reached via email at Marykatesmith64@gmail.com.
+Find me on GitHub at https://github.com/Marykate94. 
+
+
+Alternatively I can be reached via email at Marykatesmith64@gmail.com.
 
